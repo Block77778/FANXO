@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import VideoSection from "@/components/VideoSection";
+
 import AboutSection from "@/components/AboutSection";
 import RoadmapSection from "@/components/RoadmapSection";
 import CTASection from "@/components/CTASection";
@@ -17,7 +17,7 @@ const Index = () => {
       <div style={{ opacity: introDone ? 1 : 0, transition: "opacity 0.5s ease" }}>
         <Header />
         <HeroSection />
-        <VideoSection />
+        
         <AboutSection />
         <RoadmapSection />
         <CTASection />

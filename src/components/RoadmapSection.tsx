@@ -1,5 +1,6 @@
 import { useCountdown } from "@/hooks/useCountdown";
 import fanxoLogo from "@/assets/fanxo-logo.png";
+import fanxoBowling2 from "@/assets/fanxo-bowling-2.jpg";
 
 const phases = [
   { num: 1, title: "Launch on Raydium", description: "Token generation event & initial liquidity pool", active: true },
@@ -16,8 +17,15 @@ const RoadmapSection = () => {
   const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
-    <section id="roadmap" className="relative py-24 md:py-32 px-4 md:px-8 bg-muted/20">
-      <div className="max-w-6xl mx-auto">
+    <section
+      id="roadmap"
+      className="relative py-24 md:py-32 px-4 md:px-8 bg-cover bg-center"
+      style={{ backgroundImage: `url(${fanxoBowling2})` }}
+    >
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/80" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section label */}
         <div className="inline-block border border-primary/40 bg-primary/5 px-4 py-1.5 font-heading text-[10px] tracking-[0.4em] uppercase text-primary mb-6">
           Roadmap

@@ -1,4 +1,5 @@
 import fanxoLogo from "@/assets/fanxo-logo.png";
+import fanxoBowling1 from "@/assets/fanxo-bowling-1.jpg";
 
 const slogans = [
   "I think freely. I leave the herd. I choose FANXO.",
@@ -14,11 +15,18 @@ const hashtags = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative py-24 md:py-32 px-4 md:px-8">
-      {/* Decorative line */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-transparent to-primary/40" />
+    <section
+      id="about"
+      className="relative py-24 md:py-32 px-4 md:px-8 bg-cover bg-center"
+      style={{ backgroundImage: `url(${fanxoBowling1})` }}
+    >
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/75" />
 
-      <div className="max-w-6xl mx-auto">
+      {/* Decorative line */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-transparent to-primary/40 z-10" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left text */}
           <div className="space-y-6">
