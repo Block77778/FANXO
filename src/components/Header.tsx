@@ -3,8 +3,8 @@ import fanxoLogo from "@/assets/fanxo-logo.png";
 
 const navLinks = [
   { label: "About", href: "#about" },
+  { label: "How to Buy", href: "#how-to-buy" },
   { label: "Roadmap", href: "#roadmap" },
-  { label: "Tokenomics", href: "#tokenomics" },
   { label: "Community", href: "#community" },
 ];
 
