@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 import fanxoPromo from "@/assets/fanxo-promo.mp4";
+import fanxoPromoMobile from "@/assets/fanxo-promo-mobile.mp4";
 
 interface IntroAnimationProps {
   onComplete: () => void;
@@ -8,6 +10,7 @@ interface IntroAnimationProps {
 
 const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
   const [fadeOut, setFadeOut] = useState(false);
+  const isMobile = useIsMobile();
 
   const handleVideoEnd = () => {
     setFadeOut(true);
@@ -21,7 +24,7 @@ const IntroAnimation = ({ onComplete }: IntroAnimationProps) => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <video
-        src={fanxoPromo}
+        src={isMobile ? fanxoPromoMobile : fanxoPromo}
         autoPlay
         muted
         playsInline

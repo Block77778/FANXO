@@ -37,13 +37,12 @@ const Footer = () => {
               <h4 className="font-heading text-xs tracking-[0.3em] uppercase text-primary mb-4">Socials</h4>
               <ul className="space-y-3">
                 {[
-                  { name: "Twitter / X", icon: "𝕏" },
-                  { name: "Telegram", icon: "✈" },
-                  { name: "Discord", icon: "💬" },
-                  { name: "Reddit", icon: "📡" },
+                  { name: "Twitter / X", icon: "𝕏", href: "https://x.com/FANXO4855071" },
+                  { name: "Telegram", icon: "✈", href: "https://t.me/+JRrYRw2jcHMzYjNk" },
+                  { name: "Email", icon: "✉", href: "mailto:fanxo.crypto@proton.me" },
                 ].map((s) => (
                   <li key={s.name}>
-                    <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-body flex items-center gap-2">
+                    <a href={s.href} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-body flex items-center gap-2">
                       <span>{s.icon}</span> {s.name}
                     </a>
                   </li>

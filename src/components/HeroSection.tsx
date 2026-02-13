@@ -47,14 +47,15 @@ const HeroSection = () => {
         {/* Social icons */}
         <div className="flex gap-3 mb-10">
           {[
-            { icon: "𝕏", label: "Twitter" },
-            { icon: "✈", label: "Telegram" },
-            { icon: "💬", label: "Discord" },
-            { icon: "📡", label: "Reddit" },
+            { icon: "𝕏", label: "Twitter", href: "https://x.com/FANXO4855071" },
+            { icon: "✈", label: "Telegram", href: "https://t.me/+JRrYRw2jcHMzYjNk" },
+            { icon: "✉", label: "Email", href: "mailto:fanxo.crypto@proton.me" },
           ].map((s, i) => (
             <a
               key={i}
-              href="#"
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
               title={s.label}
               className="w-11 h-11 border border-neon/40 bg-neon/5 flex items-center justify-center text-neon hover:bg-neon hover:text-background transition-all text-lg backdrop-blur-sm"
             >
