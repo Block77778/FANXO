@@ -19,10 +19,10 @@ const CTASection = () => {
               HODL and defy the system's bullsh*t!
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
-              <a href="#" className="border-2 border-neon bg-neon/10 px-8 py-3 font-heading text-xs tracking-[0.3em] text-neon hover:bg-neon hover:text-background transition-all uppercase glow-green">
+              <a href="https://t.me/+JRrYRw2jcHMzYjNk" target="_blank" rel="noopener noreferrer" className="border-2 border-neon bg-neon/10 px-8 py-3 font-heading text-xs tracking-[0.3em] text-neon hover:bg-neon hover:text-background transition-all uppercase glow-green">
                 Join Telegram
               </a>
-              <a href="#" className="border border-border px-8 py-3 font-heading text-xs tracking-[0.3em] text-muted-foreground hover:text-foreground hover:border-foreground/40 transition-all uppercase">
+              <a href="https://x.com/FANXO4855071" target="_blank" rel="noopener noreferrer" className="border border-border px-8 py-3 font-heading text-xs tracking-[0.3em] text-muted-foreground hover:text-foreground hover:border-foreground/40 transition-all uppercase">
                 Follow on X
               </a>
             </div>
